@@ -1,0 +1,156 @@
+:root {
+	--marginLeft: 50px;
+	--contentMargin: 50px;
+}
+
+
+.stream-page {
+	margin-left: calc(var(--marginLeft) + var(--sidebarSize));
+	overflow: auto;
+	margin-bottom: 100px;
+	padding-top: 30px;
+}
+
+
+.stream-page h1, h2, h3, h4, h5, h6, p, svg, span {
+	color: white;
+}
+
+
+.stream-content {
+	margin-top: var(--contentMarginTop);
+	margin-left: var(--contentMargin);
+}
+
+
+.stream-popular-games {
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+
+.stream-game-box {
+	width: 196px;
+	height: 256px;
+
+	margin-left: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 20px;
+
+	background: linear-gradient(45deg, #5B2C6F 50%, #EC7063 90%);
+
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	border-bottom: 10px solid black;
+
+	gap: 25px;
+}
+
+
+.stream-game-box p {
+	font-size: 1.1rem;
+	font-weight: bold;
+
+	background-color: #6495ED;
+	border-radius: 20px;
+	padding: 0 20px;
+}
+
+
+.stream-game-box img {
+	border-radius: 128px;
+	transition: 250ms;
+}
+
+
+.stream-game-box img:hover {
+	transform: scale(1.2, 1.2);
+}
+
+
+/*.stream-game-badge {
+	background-color: #6495ED;
+	border-radius: 20px;
+	padding: 0 20px;
+}*/
+
+
+.stream-best-streamers {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+	overflow-x: auto;
+}
+
+
+.streamer-box {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+
+.streamer-box img {
+	border-radius: 10px;
+	transition: 250ms;
+}
+
+
+.streamer-box img:hover {
+	transform: scale(1.2, 1.2);
+}
+
+
+.stream-box {
+	width: 400px;
+	height: 285px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+
+.stream-box .stream-box-body {
+	width: 400px; /*16:9 -> 400 225*/
+	height: 225px;
+	background-repeat: no-repeat !important;
+	background-size: 400px 225px !important;
+
+	border-radius: 20px 20px 0 0;
+}
+
+
+#stream1 {background: url('../img/stream/games/thumbnail.jpg');}
+#stream2 {background: url('../img/stream/games/thumbnail2.webp');}
+#stream3 {background: url('../img/stream/games/thumbnail3.webp');}
+#stream4 {background: url('../img/stream/games/thumbnail4.jpg');}
+
+
+.stream-box .stream-box-footer {
+	width: 400px;
+	height: 60px;
+	border-radius: 0 0 20px 20px;
+	background: #34495E;
+
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+
+	padding: 5px 5px;
+
+	box-sizing: border-box;
+}
+
+
+.stream-view {
+
+}

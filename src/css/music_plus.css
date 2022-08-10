@@ -1,0 +1,124 @@
+.music-plus {
+    margin: var(--contentMarginTop) 0 0 calc(var(--sidebarSize) + var(--contentMarginLeft));
+}
+
+
+.text-white {
+    color: #fff;
+}
+
+
+.music-plus-category {
+    padding: 10px 10px;
+    border-radius: 10px;
+
+    background: linear-gradient(120deg, #8E44AD 10%, #A569BD 30%, #F8C471 50%);
+}
+
+
+.playlist-btn {
+	background: black;
+	text-align: start;
+	color: white;
+	border-radius: 10px;
+
+	font-size: 1.5rem;
+	font-weight: bold;
+
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+
+
+.recommended-band img {
+	border-radius: 10px;
+	background: #8E44AD;
+	cursor: pointer;
+}
+
+
+.recommended-band img::selection {
+	background: none;
+}
+
+
+.recommended-song {
+	position: relative;
+}
+
+
+.play-button {
+	position: absolute;
+
+	width: 64px;
+	height: 64px;
+
+	top: 16px;
+	z-index: 99;
+
+	opacity: 0.0;
+	transition: 200ms;
+
+	cursor: pointer;
+}
+
+
+.image-cover {
+
+	position: absolute;
+
+	border-radius: 10px;
+	width: 96px;
+	height: 96px;
+
+	top: 0;
+
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+	opacity: 0.0;
+
+	transition: 200ms;
+}
+
+
+.image-cover:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+}
+
+.recommended-song {
+	width: 150px;
+	height: 200px;
+	background: linear-gradient(120deg, #2874A6, #148F77);
+	border-radius: 20px 20px 20px 20px;
+}
+
+
+.recommended-song:hover > .play-button {
+	opacity: 1.0;
+}
+
+
+.recommended-song:hover > .image-cover {
+	opacity: 1.0;
+}
+
+#music-plus-sidebar {
+	position: fixed;
+
+	top: 0;
+	right: 0;
+
+	width: 350px;
+	height: 100vh;
+	background: linear-gradient(#1D4070 20%, #2980B9 60%, #1D4070);
+	border-radius: 50px 0 0 50px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#music-plus-sidebar img {
+	border-radius: 10px;
+}

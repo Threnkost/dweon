@@ -23,5 +23,30 @@ export const data = {
 		{"name":"Believer", "artist":"Imagine Dragons", "logo":require("../../img/music+/albumes/imagine_dragons.jpg")},
 		{"name":"Natural", "artist":"Imagine Dragons", "logo":require("../../img/music+/albumes/imagine_dragons.jpg")},
 		{"name":"Engel", "artist":"Rammstein", "logo":require("../../img/music+/albumes/rammstein.jpg")}
+	],
+
+	history: [
+		{"name":"Pain", "artist":"Three Days Grace"},
+		{"name":"Get Out Alive", "artist":"Three Days Grace"},
+		{"name":"Break", "artist":"Three Days Grace"},
+		{"name":"Animal I Have Become", "artist":"Three Days Grace"},
+		{"name":"Fallen Angel", "artist":"Three Days Grace"},
+		{"name":"I Hate Everything About You", "artist":"Three Days Grace"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"},
+		{"name":"Song", "artist":"Artist"}
 	]
 }

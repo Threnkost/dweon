@@ -8,7 +8,22 @@ import img from '../img/music+/albumes/three_days_grace.jpg';
 
 function MusicHistory(props) {
     return (
-        <h1 className = "text-white">Müzik geçmişi</h1>
+        <div className = "display-flex flex-column">
+            <h1 className = "text-white">History (last 50 songs)</h1>
+            {
+                props.content.history.map(song => {
+                    return (
+                        <div className = "music-plus-song display-flex flex-row align-center gap-10px">
+                            <svg className="square-32px w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <div>
+                                <h3>{song.name}</h3>
+                                <h5 style={{color: "#A7A7A7"}}>{song.artist}</h5>
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </div>
     );
 }
 
@@ -106,7 +121,7 @@ class MusicPlus extends Component {
                 1: [Social, {}],
                 2: [Playlists, {}],
                 3: [SavedSongs, {}],
-                4: [MusicHistory, {}] 
+                4: [MusicHistory, {history: musicDataAPI.getHistory()}] 
             }
         };
     }

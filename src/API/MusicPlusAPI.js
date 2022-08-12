@@ -7,7 +7,7 @@ function MusicDataAPI() {
 	this.getPlayQuicklyList       = () => {return data.playQuicklyList;}
 	this.getFavouriteSongs     = () => {return data.favouriteSongs;}
 	this.getRecommendedArtists = () => {return data.recommendedArtists;}
-
+	this.getHistory            = () => {return data.history;}
 }
 
 const musicDataAPI = new MusicDataAPI();

@@ -24,7 +24,7 @@ body {
 	width: var(--sidebarSize);
 	height: 100vh;
 	background: #3D3D3D;
-	border-radius: 0 20px 20px 0;
+	border-radius: 0 0 20px 0;
 
 	display: flex;
 	flex-direction: column;

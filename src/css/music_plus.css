@@ -1,5 +1,30 @@
 .music-plus {
-    margin: var(--contentMarginTop) 0 0 calc(var(--sidebarSize) + var(--contentMarginLeft));
+    margin: 0 0 0 calc(var(--sidebarSize));
+}
+
+
+.music-plus-body {
+	background: linear-gradient(#1B4F72 50%, rgba(0, 0, 0, 0));
+	width: 650px;
+	max-width: 650px;
+	border-radius: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+
+.music-plus-body::-webkit-scrollbar {
+	width: 7px;
+}
+
+.music-plus-body::-webkit-scrollbar-thumb {
+	width: 7px;
+	border-radius: 7px;
+	background: white;
+}
+
+.music-plus-body::-webkit-scrollbar-track {
+	width: 7px;
 }
 
 
@@ -8,117 +33,49 @@
 }
 
 
-.music-plus-category {
-    padding: 10px 10px;
-    border-radius: 10px;
-
-    background: linear-gradient(120deg, #8E44AD 10%, #A569BD 30%, #F8C471 50%);
+#image-cover {
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
 }
 
 
-.playlist-btn {
-	background: black;
-	text-align: start;
-	color: white;
-	border-radius: 10px;
-
-	font-size: 1.5rem;
-	font-weight: bold;
-
-	padding: 10px;
+.music-plus-menu-btn {
+	background: #154360;
+	padding: 5px 40px;
+	border-radius: 10px 10px 0 0;
+	border: none;
+	outline: none;
 	cursor: pointer;
+
+	transition: 250ms;
 }
 
 
-
-
-.recommended-band img {
-	border-radius: 10px;
-	background: #8E44AD;
-	cursor: pointer;
+.music-plus-menu-btn:hover {
+	background: #2E86C1;
 }
 
 
-.recommended-band img::selection {
+.music-player-box {
+	
+}
+
+.img-pill {
+	border-radius: 20px;
+}
+
+
+.img-pill:selection {
 	background: none;
 }
 
 
-.recommended-song {
-	position: relative;
-}
+.song-cover-box {
+	width: 102px;
+	height: 160px;
+	max-width: 102px;
+	max-height: 160px;
 
+	text-align: center;
 
-.play-button {
-	position: absolute;
-
-	width: 64px;
-	height: 64px;
-
-	top: 16px;
-	z-index: 99;
-
-	opacity: 0.0;
-	transition: 200ms;
-
-	cursor: pointer;
-}
-
-
-.image-cover {
-
-	position: absolute;
-
-	border-radius: 10px;
-	width: 96px;
-	height: 96px;
-
-	top: 0;
-
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
-	opacity: 0.0;
-
-	transition: 200ms;
-}
-
-
-.image-cover:hover {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
-}
-
-.recommended-song {
-	width: 150px;
-	height: 200px;
-	background: linear-gradient(120deg, #2874A6, #148F77);
-	border-radius: 20px 20px 20px 20px;
-}
-
-
-.recommended-song:hover > .play-button {
-	opacity: 1.0;
-}
-
-
-.recommended-song:hover > .image-cover {
-	opacity: 1.0;
-}
-
-#music-plus-sidebar {
-	position: fixed;
-
-	top: 0;
-	right: 0;
-
-	width: 350px;
-	height: 100vh;
-	background: linear-gradient(#1D4070 20%, #2980B9 60%, #1D4070);
-	border-radius: 50px 0 0 50px;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#music-plus-sidebar img {
-	border-radius: 10px;
+	box-sizing: border-box
 }

@@ -4,10 +4,9 @@
 
 
 .music-plus-body {
-	background: linear-gradient(#1B4F72 50%, rgba(0, 0, 0, 0));
-	width: 650px;
-	max-width: 650px;
-	border-radius: 15px;
+	background: linear-gradient(#1B4F72 75%, rgba(0, 0, 0, 0));
+	width: 654px;
+	max-width: 654px;
 	padding: 10px;
 	box-sizing: border-box;
 }
@@ -70,6 +69,7 @@
 
 
 .song-cover-box {
+	margin-top: 10px;
 	width: 102px;
 	height: 160px;
 	max-width: 102px;
@@ -77,7 +77,12 @@
 
 	text-align: center;
 
-	box-sizing: border-box
+	box-sizing: border-box;
+}
+
+
+.song-cover-box p {
+	font-weight: bold;
 }
 
 
